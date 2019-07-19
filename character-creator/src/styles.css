@@ -9,13 +9,18 @@
 }
 
 .dice {
-	height: 22%;
+	height: 24%;
 	text-align: center;
-	width: 14%;
+	width: 21%;
 	margin: 0 auto;
 }
 
-.nameForm {
+.confirmButt {
+	text-align: center;
+	padding-top: 2%;
+}
+
+.raceForm {
 	text-align: center;
 }
 
@@ -23,7 +28,7 @@ h1 {
 	text-align: center;
 	font-variant-caps: all-small-caps;
 	color: white;
-	padding: 40px;
+	padding: 15px;
 }
 
 body {
@@ -32,6 +37,7 @@ body {
 	padding: 40px;
 	font-family: Arial;
 }
+
 
 
 

@@ -7,7 +7,7 @@ const BASEURL = 'https://cors-anywhere.herokuapp.com/http://dnd5eapi.co/api/';
  * @param string {string}
  * @returns foundClass {JSON}
  */
-export function queryFiveDB(selectNum, string)
+function queryFiveDB(selectNum, string)
 {
 	let foundJSON = null;
 	axios.get( BASEURL + string + '/' + selectNum)
@@ -18,3 +18,5 @@ export function queryFiveDB(selectNum, string)
 
 	return foundJSON;
 }
+
+export default queryFiveDB;

@@ -1,9 +1,10 @@
 import ReactDOM from 'react-dom';
-import React from 'react';
+import React, {Component} from 'react';
 import {Illustration, Shape} from 'react-zdog';
 // New react-spring target, for native animation outside of React
 import './styles.css';
-
+import DiceIll from "../components/DiceModel";
+//TODO this dice model has a mostly complete physics set, where you can click and drag it to spin it
 /** --- Basic, re-usable data -------------------------- */
 const TAU = Math.PI * 2;
 
@@ -116,3 +117,41 @@ ReactDOM.render(
 	</Illustration>,
 	document.getElementById('root')
 )
+
+/* -------------------------------------------- */
+
+export default class CreateNew extends Component
+{
+	constructor(props)
+	{
+		super(props);
+		this.state = {
+			name: "",
+			redirect: false
+		};
+
+	}
+
+	handleChange = (e) => { this.setState({name: e.target.value}) };
+
+	handleSubmit = () => {
+		console.log(this.state.name);
+		this.history.props.push('/create/class');
+	};
+
+	render()
+	{
+		return (
+			<>
+				<form onSubmit={this.handleSubmit} className="nameForm">
+					<input type="text" placeholder="Enter your Character's Name" value={this.state.name} onChange={this.handleChange} />
+					<input type="submit" value="Go!" />
+				</form>
+				<div className="dice">
+					<DiceIll/>
+				</div>
+
+			</>
+		);
+	}
+}
