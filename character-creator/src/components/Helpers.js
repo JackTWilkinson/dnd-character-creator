@@ -1,16 +1,15 @@
 import axios from "axios";
 
-const BASEURL = 'https://cors-anywhere.herokuapp.com/http://dnd5eapi.co/api/';
+const BASEURL = 'http://dnd5eapi.co/api/spells/';
 /**
  *
  * @param selectNum {int}
- * @param string {string}
  * @returns foundClass {JSON}
  */
-function queryFiveDB(selectNum, string)
+function queryFiveDB(selectNum)
 {
 	let foundJSON = null;
-	axios.get( BASEURL + string + '/' + selectNum)
+	axios.get( BASEURL + 'http://dnd5eapi.co/api/spells/1/')
 		 .then(res =>
 		 {
 			 foundJSON = res.data;
@@ -20,3 +19,5 @@ function queryFiveDB(selectNum, string)
 }
 
 export default queryFiveDB;
+
+//TODO, not sure why but the CORS workaround that I found doesn't seem to be working anymore, need to fix
