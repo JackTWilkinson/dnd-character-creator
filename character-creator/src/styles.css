@@ -15,8 +15,13 @@
 	margin: 0 auto;
 }
 
-.race-card {
+.card {
+	/*text-align: center;*/
+	/*margin: auto;*/
 	color: black;
+}
+
+.navBar {
 
 }
 

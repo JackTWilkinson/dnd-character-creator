@@ -1,23 +1,32 @@
 import axios from "axios";
 
-const BASEURL = 'http://dnd5eapi.co/api/spells/';
 /**
  *
  * @param selectNum {int}
- * @returns foundClass {JSON}
+ * @returns foundRace {JSON}
  */
-function queryFiveDB(selectNum)
+function fetchRace(selectNum)
 {
-	let foundJSON = null;
-	axios.get( BASEURL + 'http://dnd5eapi.co/api/spells/1/')
-		 .then(res =>
-		 {
-			 foundJSON = res.data;
-		 });
+	let raceJSON = null;
+	axios.get("http://www.dnd5eapi.co/api/races/" + selectNum + "/")
+		 .then(res => {
+		raceJSON = res.data;
+		console.log(raceJSON);
+	});
 
-	return foundJSON;
+	return raceJSON;
 }
 
-export default queryFiveDB;
+/**
+ * @param selectNum {int}
+ * @returns foundClass {JSON}
+ */
+function fetchClass(selectNum){
+	let classJSON = null;
 
-//TODO, not sure why but the CORS workaround that I found doesn't seem to be working anymore, need to fix
+	return classJSON;
+}
+
+export default fetchRace;
+
+//TODO need to find a CORS workaround

@@ -112,7 +112,7 @@ function DiceModel()
 
 		return (
 			<Anchor ref={ref} translate={{x: 0, y: 0}} scale={1.2}>
-				{pieces}
+				{pieces} {/*TODO assign keys to all the elements in the array */}
 			</Anchor>
 		);
 	};
