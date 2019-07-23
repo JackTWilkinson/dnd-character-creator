@@ -1,30 +1,42 @@
 import React, {Component} from "react";
 import {Button, Card, CardDeck, Nav} from "react-bootstrap";
-import axios from "axios";
+import {getRaces} from "./Helpers";
+import Dwarf from "../resources/Dwarf.png";
+import Elf from "../resources/Elf.png";
+import Halfling from "../resources/Halfling.png";
+import Human from "../resources/Human.png";
+import Dragonborn from "../resources/Dragonborn.png";
+import Gnome from "../resources/Gnome.png";
+import HalfElf from "../resources/HalfElf.png";
+import HalfOrc from "../resources/HalfOrc.png";
+import Tiefling from "../resources/Tiefling.png";
+
+const racePictures = [Dwarf, Elf, Halfling, Human, Dragonborn, Gnome, HalfElf, HalfOrc, Tiefling];
 
 export default class RaceSelect extends Component
 {
-	selectedRace = (num) => {
+	constructor(props)
+	{
+		super(props);
 
-	};
-
-	handleSelect = () => {
-
-	};
+		this.state = {
+			races: null
+		};
+	}
 
 	populateDeck = () =>
 	{
+		const tempRaces = getRaces();
+		console.log(JSON.stringify(tempRaces));
 		let cards = [];
 
 		for (let i = 1; i <= 3; i++) //TODO 9 Races supported by DB
 		{
-			const race = fetchRace(i);
-
 			cards.push(
-				<Card style={{width: '20rem'}} key={i}>
+				<Card style={{width: '18rem'}} key={i}>
 					<Card.Body>
 						<Card.Header><Card.Title>{  }</Card.Title></Card.Header>
-						<Card.Img src="https://media-waterdeep.cursecdn.com/avatars/thumbnails/6/254/420/618/636271781394265550.png"/>
+						<Card.Img src={racePictures[i - 1]}/>
 						<Card.Header>
 							<Nav variant="tabs" defaultActiveKey="#stats">
 								<Nav.Item>
@@ -35,12 +47,9 @@ export default class RaceSelect extends Component
 								</Nav.Item>
 							</Nav>
 						</Card.Header>
-						<Card.Text>
-							{}
-							{}
-						</Card.Text>
 					</Card.Body>
-					<Button variant="primary" onClick={this.selectedRace(i)}>Choose Race</Button>
+					<Button variant="primary">Choose Race</Button>
+					{/*TODO, need a method to change styling for the card that is selected*/}
 				</Card>);
 		}
 
@@ -57,19 +66,3 @@ export default class RaceSelect extends Component
 	}
 }
 
-/**
- *
- * @param selectNum {int}
- * @returns foundRace {JSON}
- */
-function fetchRace(selectNum)
-{
-	let raceJSON = null;
-	axios.get("http://www.dnd5eapi.co/api/races/" + selectNum + "/")
-		 .then(res => {
-			 raceJSON = res.data;
-			 console.log(raceJSON);
-		 });
-
-	return raceJSON;
-}
