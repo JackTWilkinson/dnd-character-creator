@@ -20,19 +20,21 @@ export default class CreateNew extends Component
 			<>
 				<h1>Choose a Race and a Character Name</h1>
 				<hr/>
-				<InputGroup className="new-form">
-					<InputGroup.Prepend>
-						<InputGroup.Text id="basic-addon1">Test</InputGroup.Text>
-					</InputGroup.Prepend>
-					<FormControl
-						placeholder="Enter Your Character's Name Here"
-						aria-label="Enter Your Character's Name Here"
-						aria-describedby="basic-addon1"
-					/>
-				</InputGroup>
+				<Col className="new-form" md={{ span:3 }}>
+					<InputGroup>
+						<InputGroup.Prepend>
+							<InputGroup.Text id="basic-addon1"/>
+						</InputGroup.Prepend>
+						<FormControl
+							placeholder="Enter Your Character's Name Here"
+							aria-label="Enter Your Character's Name Here"
+							aria-describedby="basic-addon1"
+						/>
+					</InputGroup>
+				</Col>
+				<br/>
 				<Col className="race-form" lg="auto">
 					<div>
-						<br />
 						<RaceSelect/>
 					</div>
 				</Col>

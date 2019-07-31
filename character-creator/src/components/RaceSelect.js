@@ -1,5 +1,6 @@
 import React, {Component} from "react";
-import {Button, Card, CardDeck, Nav, Spinner} from "react-bootstrap";
+import {Button, Card, CardDeck, Spinner} from "react-bootstrap";
+import {Tab, TabList, TabPanel, Tabs} from 'react-tabs';
 import Dwarf from "../resources/Dwarf.png";
 import Elf from "../resources/Elf.png";
 import Halfling from "../resources/Halfling.png";
@@ -20,6 +21,7 @@ export default class RaceSelect extends Component
 
 		this.state = {
 			error: null,
+			selectedRace: null,
 			isLoaded: false,
 			items: []
 		};
@@ -30,7 +32,7 @@ export default class RaceSelect extends Component
 		/*TODO
 		 * This part is messy right now, it shouldn't take too long to clean up.
 		 * However, it took me much to long to figure it out so I'll get back to it later
-		 * when I'm not sure burnt out.
+		 * when I'm not so burnt out on dealing with api calls.
 		*/
 		let combinedData = {0: {}, 1: {}, 2: {}, 3: {}, 4: {}, 5: {}, 6: {}, 7: {}, 8: {}};
 
@@ -110,10 +112,108 @@ export default class RaceSelect extends Component
 				   });
 	}
 
+	//TODO method to change card color when selected
+	toggle = (choice) =>
+	{
+		//change previously selected card (if exists) to normal color
+		const temp = this.state.selectedRace;
+		//change new card color
+		this.setState({selectedRace: choice});
+	};
+
+	raceContent = (race) =>
+	{
+		const abilityArr = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Wisdom', 'Charisma'];
+		const abilityBonus = race.ability_bonuses;
+		const traitArr = race.traits;
+		const langArr = race.languages;
+		const subArr = race.subraces;
+		let languageStr = 'Common';
+		let abilityShow = [];
+		let traitShow = [];
+		//let startOptionShow = []; TODO for starting trait options
+		let subShow = [];
+		let subRaces = null;
+
+		for (let i = 0; i < 6; i++)
+		{
+			if (abilityBonus[i] !== 0)
+			{
+				const id = i + '-abil-' + race.name;
+				abilityShow.push(<li key={id}>{abilityArr[i]}: +{abilityBonus[i]}</li>);
+			}
+		}
+
+		for (let i = 0; i < traitArr.length; i++)
+		{
+			const id = i + '-trait-' + race.name;
+			traitShow.push(<li key={id}>{traitArr[i].name}</li>);
+		}
+
+		if (langArr.length > 1)
+		{
+			for (let i = 1; i < langArr.length; i++)
+			{
+				languageStr += ', ' + langArr[i].name;
+			}
+		}
+
+		if (subArr !== null)
+		{
+			for (let i = 0; i < subArr.length; i++)
+			{
+				const id = i + '-sub-' + race.name;
+				subShow.push(<li key={id}>{subArr[0].name}</li>);
+			}
+		}
+
+		if (subShow.length !== 0)
+		{
+			subRaces =
+				<>
+					<b>Subraces: </b>
+					<ul>
+						{subShow}
+					</ul>
+				</>;
+		}
+
+		return (
+			<Tabs>
+				<TabList>
+					<Tab>Stats</Tab>
+					<Tab>Info</Tab>
+					<Tab>Extra Info</Tab>
+				</TabList>
+				<TabPanel>
+					<b>Ability Bonuses: </b>
+					<ul>{abilityShow}</ul>
+					<b>Traits: </b>
+					<ul>{traitShow}</ul>
+					<b>Speed: </b>{race.speed}ft <br/>
+					<b>Size: </b>{race.size}<br/>
+					<b>Languages: </b>{languageStr}<br/>
+				</TabPanel>
+				<TabPanel>
+					<b>Age: </b>{race.age}<br/>
+					<b>Alignment: </b>{race.alignment}
+					{subRaces}
+				</TabPanel>
+				<TabPanel>
+					<b>Language Description: </b>{race.language_desc}<br/>
+					<b>Size Description: </b>{race.size_description}
+				</TabPanel>
+			</Tabs>
+		);
+	};
+
 	render()
 	{
 		const {error, isLoaded} = this.state;
-		let deckArr = [];
+		let deckArr1 = [];
+		let deckArr2 = [];
+		let deckArr3 = [];
+		let count = 0;
 
 		if (error)
 		{
@@ -129,50 +229,71 @@ export default class RaceSelect extends Component
 		}
 		else
 		{
-			for (let i = 1; i <= 3; i++) //TODO 9 Races supported by DB
+			for (let j = 0; j < 3; j++)
 			{
-				let race = this.state.items[i - 1];
-				console.log(race);
-				let stats = "#stats-" + race.name;
-				let info = "#info-" + race.name;
+				let tempArr = [];
+				for (let i = 1; i <= 3; i++) //TODO 9 Races supported by DB
+				{
+					let race = this.state.items[count];
+					const selectKey = race.name + '-card';
 
-				deckArr.push(
-					<Card style={{width: '15rem'}} key={i}>
-						<Card.Body>
-							<Card.Header className="cardTitle"><Card.Title>{race.name}</Card.Title></Card.Header>
-							<Card.Img src={racePictures[i - 1]}/>
-							<Card.Header>
-								<Nav variant="tabs" defaultActiveKey={ stats }>
-									<Nav.Item>
-										<Nav.Link href={ stats }>Stats</Nav.Link>
-									</Nav.Item>
-									<Nav.Item>
-										<Nav.Link href={ info }>General Info</Nav.Link>
-									</Nav.Item>
-								</Nav>
-							</Card.Header>
-						</Card.Body>
-						<Button variant="primary">Choose Race</Button>
-						{/*TODO, can just change background to green or something when a class is selected*/}
-					</Card>);
+					tempArr.push(
+						<Card style={{width: '15rem'}} key={i}>
+							<Card.Body>
+								<Card.Header className="cardTitle"><Card.Title>{race.name}</Card.Title></Card.Header>
+								<Card.Img src={racePictures[count]}/>
+								<Card.Header>
+									{this.raceContent(race)}
+								</Card.Header>
+							</Card.Body>
+							<Button key={selectKey} variant="primary" onClick={this.toggle}>Choose Race</Button>
+						</Card>);
+					count++;
+				}
+				switch (j)
+				{
+					case 0:
+						deckArr1 = tempArr;
+						break;
+					case 1:
+						deckArr2 = tempArr;
+						break;
+					case 2:
+						deckArr3 = tempArr;
+				}
 			}
 
 			return (
 				<div>
 					<CardDeck>
-						{deckArr}
+						{deckArr1}
 					</CardDeck>
 					<br/>
 					<CardDeck>
-						{deckArr}
+						{deckArr2}
 					</CardDeck>
 					<br/>
 					<CardDeck>
-						{deckArr}
-					</CardDeck>
+						{deckArr3}
+					</CardDeck><br/>
+					<Button variant="success">Confirm and move on</Button>
 				</div>
 			);
 		}
 	}
 }
+
+/*
+TODO certain races (ex: dwarves) get a free proficiency in tools of their choice.
+Along with this there are several cases where concentric api requests are required
+in order to get info on traits and other relevant info. Maybe include a help bubble
+on top of the screen? May be too cheesy.
+TODO most importantly, subraces require this for the ability bonuses/extra info
+SOME MORE QOL Notes:
+ -Make all the pictures the same size
+ -Standardize card size (add a scroll wheel)
+ -Center Name Entry
+ -Maybe a progress bar
+ -center card titles + change font
+ */
 

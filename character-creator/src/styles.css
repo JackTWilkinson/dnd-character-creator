@@ -15,6 +15,10 @@
 	margin: 0 auto;
 }
 
+.up {
+	margin-top: 50px;
+}
+
 .card {
 	/*text-align: center;*/
 	/*margin: auto;*/

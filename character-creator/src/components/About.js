@@ -21,6 +21,7 @@ export default () => (
 			<li>react-router</li>
 			<li>react-zdog</li>
 			<li>react-bootstrap</li>
+			<li>react-tabs (generic tab library that required less work than bootstrap)</li>
 			{/*	TODO Update as the app is completed more */}
 		</ul>
 		<h3>Additional Resources Used</h3>
@@ -28,7 +29,7 @@ export default () => (
 			<li>Dnd Beyond race images</li>
 			<li>Zdog icosahedron model</li>
 		</ul>
-		<h3>Planned Features</h3>
+		<h3>Planned/Hopeful Features</h3>
 		<ul>
 			<li>A way to compare classes</li>
 			<li>Support for dnd supplemental books</li>
