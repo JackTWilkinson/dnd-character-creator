@@ -112,11 +112,10 @@ export default class RaceSelect extends Component
 				   });
 	}
 
-	//TODO method to change card color when selected
+	//TODO I think this does what I want?
 	toggle = (choice) =>
 	{
 		//change previously selected card (if exists) to normal color
-		const temp = this.state.selectedRace;
 		//change new card color
 		this.setState({selectedRace: choice});
 	};
@@ -131,7 +130,6 @@ export default class RaceSelect extends Component
 		let languageStr = 'Common';
 		let abilityShow = [];
 		let traitShow = [];
-		//let startOptionShow = []; TODO for starting trait options
 		let subShow = [];
 		let subRaces = null;
 
@@ -196,7 +194,7 @@ export default class RaceSelect extends Component
 				</TabPanel>
 				<TabPanel>
 					<b>Age: </b>{race.age}<br/>
-					<b>Alignment: </b>{race.alignment}
+					<b>Alignment: </b>{race.alignment} <br/>
 					{subRaces}
 				</TabPanel>
 				<TabPanel>
@@ -232,21 +230,27 @@ export default class RaceSelect extends Component
 			for (let j = 0; j < 3; j++)
 			{
 				let tempArr = [];
-				for (let i = 1; i <= 3; i++) //TODO 9 Races supported by DB
+				let background = "light";
+				for (let i = 1; i <= 3; i++)
 				{
 					let race = this.state.items[count];
 					const selectKey = race.name + '-card';
 
+					if (race.name === this.state.selectedRace)
+					{
+						background = "success";
+					}
+
 					tempArr.push(
-						<Card style={{width: '15rem'}} key={i}>
-							<Card.Body>
-								<Card.Header className="cardTitle"><Card.Title>{race.name}</Card.Title></Card.Header>
-								<Card.Img src={racePictures[count]}/>
-								<Card.Header>
-									{this.raceContent(race)}
-								</Card.Header>
-							</Card.Body>
-							<Button key={selectKey} variant="primary" onClick={this.toggle}>Choose Race</Button>
+						<Card bg={background} style={{width: '15rem'}} key={i}>
+							<Card.Header className="cardTitle"><Card.Title>{race.name}</Card.Title></Card.Header>
+							<Card.Img src={racePictures[count]}/>
+							<Card.Header>
+								{this.raceContent(race)}
+							</Card.Header>
+							<Button key={selectKey} variant="primary" onClick={this.toggle(race.name)}>
+								Choose Race
+							</Button>
 						</Card>);
 					count++;
 				}
@@ -276,7 +280,6 @@ export default class RaceSelect extends Component
 					<CardDeck>
 						{deckArr3}
 					</CardDeck><br/>
-					<Button variant="success">Confirm and move on</Button>
 				</div>
 			);
 		}
@@ -288,12 +291,10 @@ TODO certain races (ex: dwarves) get a free proficiency in tools of their choice
 Along with this there are several cases where concentric api requests are required
 in order to get info on traits and other relevant info. Maybe include a help bubble
 on top of the screen? May be too cheesy.
-TODO most importantly, subraces require this for the ability bonuses/extra info
+most importantly, subraces require this for the ability bonuses/extra info
 SOME MORE QOL Notes:
- -Make all the pictures the same size
  -Standardize card size (add a scroll wheel)
- -Center Name Entry
  -Maybe a progress bar
- -center card titles + change font
+ - card titles change font
  */
 

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Col, FormControl, InputGroup} from "react-bootstrap";
+import {Button, Col, Form} from "react-bootstrap";
 import RaceSelect from "./RaceSelect";
 
 export default class CreateNew extends Component
@@ -16,28 +16,39 @@ export default class CreateNew extends Component
 
 	render()
 	{
+		const formCenter = {
+			textAlign: 'center',
+			margin: '0 auto'
+		};
+
+		const titleText = {
+			fontFamily: 'Arial, Times, serif',
+			color: 'white',
+			textAlign: 'center',
+			margin: '8px'
+		};
+
 		return (
 			<>
 				<h1>Choose a Race and a Character Name</h1>
 				<hr/>
-				<Col className="new-form" md={{ span:3 }}>
-					<InputGroup>
-						<InputGroup.Prepend>
-							<InputGroup.Text id="basic-addon1"/>
-						</InputGroup.Prepend>
-						<FormControl
-							placeholder="Enter Your Character's Name Here"
-							aria-label="Enter Your Character's Name Here"
-							aria-describedby="basic-addon1"
-						/>
-					</InputGroup>
-				</Col>
-				<br/>
-				<Col className="race-form" lg="auto">
-					<div>
-						<RaceSelect/>
-					</div>
-				</Col>
+				<div>
+					<Form>
+						<Col style={formCenter} md={{ span:4, align:"center" }}>
+							<Form.Group controlId="formCharName">
+								<h4 style={titleText}>Character Name</h4>
+								<Form.Control type="text" placeholder="Enter Name Here"/>
+							</Form.Group>
+						</Col>
+						<div>
+							<Form.Group controlId="formRace">
+								<h4 style={titleText}>Character Race</h4>
+								<RaceSelect/>
+							</Form.Group>
+						</div>
+						<Button className="subButt" type="submit" variant="success">Confirm and move on</Button>
+					</Form>
+				</div>
 			</>
 		);
 	}
