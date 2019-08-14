@@ -112,12 +112,11 @@ export default class RaceSelect extends Component
 				   });
 	}
 
-	//TODO I think this does what I want?
-	toggle = (choice) =>
+	toggle = (e) =>
 	{
-		//change previously selected card (if exists) to normal color
-		//change new card color
-		this.setState({selectedRace: choice});
+		//Sets selected race to the one that was just clicked.
+		this.setState({selectedRace: e.currentTarget.value});
+		console.log(this.state.selectedRace);
 	};
 
 	raceContent = (race) =>
@@ -215,7 +214,7 @@ export default class RaceSelect extends Component
 
 		if (error)
 		{
-			return <div>Error: {error.message} </div>;
+			return <div>Error: {error.message}</div>;
 		}
 		else if (!isLoaded)
 		{
@@ -230,10 +229,10 @@ export default class RaceSelect extends Component
 			for (let j = 0; j < 3; j++)
 			{
 				let tempArr = [];
-				let background = "light";
 				for (let i = 1; i <= 3; i++)
 				{
 					let race = this.state.items[count];
+					let background = "light";
 					const selectKey = race.name + '-card';
 
 					if (race.name === this.state.selectedRace)
@@ -248,7 +247,7 @@ export default class RaceSelect extends Component
 							<Card.Header>
 								{this.raceContent(race)}
 							</Card.Header>
-							<Button key={selectKey} variant="primary" onClick={this.toggle(race.name)}>
+							<Button key={selectKey} value={race.name} onClick={this.toggle}>
 								Choose Race
 							</Button>
 						</Card>);
@@ -296,5 +295,6 @@ SOME MORE QOL Notes:
  -Standardize card size (add a scroll wheel)
  -Maybe a progress bar
  - card titles change font
+ - Select highlights the button or less of the actual card. white works really well for that
  */
 
