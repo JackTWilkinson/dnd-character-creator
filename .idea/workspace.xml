@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c242b3cc-7d66-4ae6-bdfb-1db675060e4b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Barbarian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Bard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Cleric.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Druid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Fighter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Monk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Paladin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Ranger.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Rogue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Sorcerer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Warlock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/character-creator/src/resources/class/Wizard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/components/ClassSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/components/ClassSelect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/components/RaceSelect.js" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/components/RaceSelect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/resources/Dragonborn.png" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/resources/race/Dragonborn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/resources/Dwarf.png" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/resources/race/Dwarf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/resources/Elf.png" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/resources/race/Elf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/resources/Elf2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/resources/Gnome.png" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/resources/race/Gnome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/resources/HalfElf.png" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/resources/race/HalfElf.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/resources/HalfOrc.png" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/resources/race/HalfOrc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/resources/Halfling.png" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/resources/race/Halfling.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/resources/Human.png" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/resources/race/Human.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/resources/Mountains.png" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/resources/race/Mountains.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/character-creator/src/resources/Tiefling.png" beforeDir="false" afterPath="$PROJECT_DIR$/character-creator/src/resources/race/Tiefling.png" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/character-creator/src/components/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/character-creator/src/components/CreateNew.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="799">
+              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/character-creator/src/components/ClassSelect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1574">
+              <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/character-creator/src/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>TAU</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Jack Wilkinson &lt;35941125+jacktwilkinson@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/character-creator/src/components/Helpers.js" />
+        <option value="$PROJECT_DIR$/character-creator/src/components/About.js" />
+        <option value="$PROJECT_DIR$/character-creator/src/index.js" />
+        <option value="$PROJECT_DIR$/character-creator/index.html" />
+        <option value="$PROJECT_DIR$/character-creator/src/components/App.js" />
+        <option value="$PROJECT_DIR$/character-creator/src/styles.css" />
+        <option value="$PROJECT_DIR$/character-creator/src/components/CreateNew.js" />
+        <option value="$PROJECT_DIR$/character-creator/src/components/RaceSelect.js" />
+        <option value="$PROJECT_DIR$/character-creator/src/components/ClassSelect.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1917" />
+    <option name="y" value="-15" />
+    <option name="width" value="614" />
+    <option name="height" value="613" />
+  </component>
+  <component name="ProjectId" id="1OVpW6FAMbuL7qqSBxWV7AroXLS" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Dnd-Character-Forge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dnd-Character-Forge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dnd-Character-Forge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dnd-Character-Forge" type="462c0819:PsiDirectoryNode" />
+              <item name="character-creator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dnd-Character-Forge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dnd-Character-Forge" type="462c0819:PsiDirectoryNode" />
+              <item name="character-creator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dnd-Character-Forge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dnd-Character-Forge" type="462c0819:PsiDirectoryNode" />
+              <item name="character-creator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="W:/honors/wdjtw1-fymp-honors.wd.its.iastate.edu" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\its\wdjtw1.wd.its.iastate.edu\www\Dnd-Character-Forge\character-creator\src\resources\class" />
+      <recent name="W:\its\wdjtw1.wd.its.iastate.edu\www\Dnd-Character-Forge\character-creator\src\resources\race" />
+      <recent name="W:\its\wdjtw1.wd.its.iastate.edu\www\Dnd-Character-Forge\character-creator\src\resources" />
+      <recent name="W:\its\wdjtw1.wd.its.iastate.edu\www\Dnd-Character-Forge\character-creator\src\resources\race-2" />
+      <recent name="W:\its\wdjtw1.wd.its.iastate.edu\www\Dnd-Character-Forge\character-creator\src\components" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c242b3cc-7d66-4ae6-bdfb-1db675060e4b" name="Default Changelist" comment="" />
+      <created>1563206807534</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563206807534</updated>
+      <workItem from="1563206808599" duration="3862000" />
+      <workItem from="1563213721098" duration="13569000" />
+      <workItem from="1563283939474" duration="25199000" />
+      <workItem from="1563372715750" duration="8662000" />
+      <workItem from="1563387230498" duration="7348000" />
+      <workItem from="1563456705900" duration="2558000" />
+      <workItem from="1563474648606" duration="945000" />
+      <workItem from="1563546519236" duration="15641000" />
+      <workItem from="1563808177167" duration="12871000" />
+      <workItem from="1563825780372" duration="843000" />
+      <workItem from="1563828069376" duration="4507000" />
+      <workItem from="1563894308930" duration="19737000" />
+      <workItem from="1564072647982" duration="12065000" />
+      <workItem from="1564248230754" duration="597000" />
+      <workItem from="1564404607204" duration="12939000" />
+      <workItem from="1564436485800" duration="597000" />
+      <workItem from="1564500263616" duration="15854000" />
+      <workItem from="1564577867891" duration="16945000" />
+      <workItem from="1564758651775" duration="3471000" />
+      <workItem from="1564868377392" duration="596000" />
+      <workItem from="1565008878616" duration="6004000" />
+      <workItem from="1565184732817" duration="7063000" />
+      <workItem from="1565275696381" duration="7745000" />
+      <workItem from="1565365481625" duration="8657000" />
+      <workItem from="1565795144657" duration="12680000" />
+    </task>
+    <task id="LOCAL-00001" summary="Project Setup with REACT nano">
+      <created>1563207438594</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563207438594</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Dice model is working (still needs numbers). First page working.">
+      <created>1563485739516</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563485739516</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Re-did routing. Trying to make it a little more clean and workable.">
+      <created>1563572373108</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563572373108</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Re-did routing. Trying to make it a little more clean and workable.">
+      <created>1563834364029</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563834364029</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Trying to fix issues with querying api. added images locally.">
+      <created>1563918924169</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563918924169</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed api querying. Working on race select formatting">
+      <created>1564528308413</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1564528308413</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added content to cards for each race.">
+      <created>1564606713823</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1564606713823</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Backing up for posterity. Currently working on implementing the toggle function for raceselect.">
+      <created>1565628023502</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1565628023502</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Toggle button is working for raceSelect">
+      <created>1565799249591</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1565799249591</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="93148000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-15" width="1096" height="1896" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26061776" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.089619964" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3295519" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23069498" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.089619964" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project Setup with REACT nano" />
+    <MESSAGE value="Dice model is working (still needs numbers). First page working." />
+    <MESSAGE value="Re-did routing. Trying to make it a little more clean and workable." />
+    <MESSAGE value="Trying to fix issues with querying api. added images locally." />
+    <MESSAGE value="Fixed api querying. Working on race select formatting" />
+    <MESSAGE value="Added content to cards for each race." />
+    <MESSAGE value="Backing up for posterity. Currently working on implementing the toggle function for raceselect." />
+    <MESSAGE value="Toggle button is working for raceSelect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Toggle button is working for raceSelect" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/character-creator/src/components/Helpers.js" />
+    <entry file="file://$PROJECT_DIR$/character-creator/src/components/About.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/character-creator/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/character-creator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/character-creator/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/character-creator/src/resources/class/Cleric.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/character-creator/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/character-creator/src/components/RaceSelect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="914">
+          <caret line="264" column="21" selection-start-line="264" selection-start-column="21" selection-end-line="264" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/character-creator/src/components/CreateNew.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/character-creator/src/components/ClassSelect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1574">
+          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,15 +1,15 @@
 import React, {Component} from "react";
 import {Button, Card, CardDeck, Spinner} from "react-bootstrap";
 import {Tab, TabList, TabPanel, Tabs} from 'react-tabs';
-import Dwarf from "../resources/Dwarf.png";
-import Elf from "../resources/Elf.png";
-import Halfling from "../resources/Halfling.png";
-import Human from "../resources/Human.png";
-import Dragonborn from "../resources/Dragonborn.png";
-import Gnome from "../resources/Gnome.png";
-import HalfElf from "../resources/HalfElf.png";
-import HalfOrc from "../resources/HalfOrc.png";
-import Tiefling from "../resources/Tiefling.png";
+import Dwarf from "../resources/race/Dwarf.png";
+import Elf from "../resources/race/Elf.png";
+import Halfling from "../resources/race/Halfling.png";
+import Human from "../resources/race/Human.png";
+import Dragonborn from "../resources/race/Dragonborn.png";
+import Gnome from "../resources/race/Gnome.png";
+import HalfElf from "../resources/race/HalfElf.png";
+import HalfOrc from "../resources/race/HalfOrc.png";
+import Tiefling from "../resources/race/Tiefling.png";
 
 const racePictures = [Dwarf, Elf, Halfling, Human, Dragonborn, Gnome, HalfElf, HalfOrc, Tiefling];
 
@@ -23,17 +23,13 @@ export default class RaceSelect extends Component
 			error: null,
 			selectedRace: null,
 			isLoaded: false,
-			items: []
+			items: [],
+			startingEquip: []
 		};
 	}
 
 	componentDidMount()
 	{
-		/*TODO
-		 * This part is messy right now, it shouldn't take too long to clean up.
-		 * However, it took me much to long to figure it out so I'll get back to it later
-		 * when I'm not so burnt out on dealing with api calls.
-		*/
 		let combinedData = {0: {}, 1: {}, 2: {}, 3: {}, 4: {}, 5: {}, 6: {}, 7: {}, 8: {}};
 
 		const dwarf =
@@ -116,7 +112,6 @@ export default class RaceSelect extends Component
 	{
 		//Sets selected race to the one that was just clicked.
 		this.setState({selectedRace: e.currentTarget.value});
-		console.log(this.state.selectedRace);
 	};
 
 	raceContent = (race) =>
